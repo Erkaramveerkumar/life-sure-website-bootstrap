@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*  Index Page css */
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.text-color {
+    color: #015FC9;
+}
+
+.text-color-light {
+    color: #787878;
+}
+
+.bg-color {
+    background-color: #015FC9;
+}
+
+.bg-color-contact {
+    background-color: #16243D;
+}
+
+.bg-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.search-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #015FC9;
+}
+
+
+
+.bg-color-abt {
+    background-color: #F5F5F5;
+}
+
+.img-relative {
+    position: relative;
+}
+
+.icon-absolute {
+    position: absolute;
+    margin-left: 11rem !important;
+}
+
+.square-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #015FC9;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    align-content: center;
+}
+
+/* owl carosel */
+
+.owl-nav {
+    position: relative;
+}
+.owl-nav button {
+    position: absolute;
+    top: -280px;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+.owl-nav button.owl-prev {
+    left: 0;
+    width: 20px;
+    height: 15px;
+}
+.owl-nav button.owl-next {
+    right: 0;
+    width: 20px;
+    height: 15px;
+    color: red;
+    background-color: #4CAF50;
+    padding: 20px;
+}
+.owl-nav button:hover {
+    background: #555;
+}
+.owl-dots {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+.owl-dots .owl-dot span {
+    background: #999;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin: 8px;
+    cursor: pointer;
+}
+.owl-dots .owl-dot.active span {
+    background: #4CAF50;
+}
+.owl-carousel .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.testimonial-img {
+    max-width: 140px;
+    
+}
+.text-color-light {
+    font-size: 14px;
+}
+
+/* About Page Css */
+
+.bg-img-about {
+    background-image: url("../images/Background-5.png");
+    padding: 138px 0;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+
+
+
+/* Media query */
+
+@media (max-width: 480px) {
+    .owl-carousel .item {
+        padding: 10px;
+        box-shadow: none;
+        /* Simplify box shadow for smaller screens */
+    }
+
+    .owl-dots {
+        top: 390px;
+    }
+
+    .owl-nav button {
+        top: -380px;
+    }
+
+    .testimonial-img {
+        max-width: 80px;
+        /* Further reduce image size for extra-small screens */
+        margin-bottom: 15px;
+    }
+
+    .h4 {
+        font-size: 18px;
+        /* Adjust heading size */
+        margin-bottom: 5px;
+    }
+
+    .text-color-light {
+        font-size: 12px;
+        /* Reduce font size */
+    }
+
+    .star-rating i {
+        font-size: 14px;
+        /* Smaller star icons */
+    }
+
+    .text-color-light.mt-2 {
+        margin-top: 10px;
+        line-height: 1.4;
+        /* Improve line spacing */
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 760px) {
+    .owl-dots {
+        top: 430px;
+    }
+
+    .owl-nav button {
+        top: -420px;
+    }
+}
+@media screen and (min-width: 765px) and (max-width: 800px) {
+    .owl-dots {
+        top: 250px;
+    }
+
+    .owl-nav button {
+        top: -230px;
+    }
+}
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+    .owl-dots {
+        top: 280px;
+    }
+
+    .owl-nav button {
+        top: -280px;
+    }
+}
